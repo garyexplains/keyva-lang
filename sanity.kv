@@ -1,0 +1,105 @@
+def this_is_a_function(a, b)
+    return a+b
+end
+
+def another_function(x)
+    return x
+end
+
+def function_zero()
+    print("This is function_zero")
+end
+
+passed = 0
+this_is_a_function(22, 33)
+f = this_is_a_function(10, 20)
+if f == 30
+    print("PASS 1")
+    passed = passed + 1
+end
+
+f = another_function(42)
+f = another_function(f)
+if f == 42
+    print("PASS 2")
+    passed = passed + 1
+end
+
+r=2
+if r < 5
+    print("PASS 3")
+    passed = passed + 1
+else
+    print("FAIL 3")
+end
+r=7
+if r < 5
+    print("FAIL 4")
+else
+    print("PASS 4")
+    passed = passed + 1
+end
+x = 10
+x["a"] = 11
+x["bob"] = 12
+for i in x
+    if i == 10
+        print("PASS 5")
+        passed = passed + 1
+    end
+    if i == 11
+        print("PASS 6")
+        passed = passed + 1
+    end
+    if i == 12
+        print("PASS 7")
+        passed = passed + 1
+    end
+end
+q=0
+t[q]=0
+if t[0] == 0
+    print("PASS 8")
+    passed = passed + 1
+end
+c = 0
+while c < 10
+    c = c + 1
+end
+if c == 10
+    print("PASS 9")
+    passed = passed + 1
+end
+c = 0
+while c < 10
+    c = c + 1
+    cend = c
+end
+if cend == 10
+    print("PASS 10")
+    passed = passed + 1
+end
+for i in x
+    t2 = i
+end
+if t2 == 12
+    print("PASS 11")
+    passed = passed + 1
+end
+def f1()
+    x["a"]=11
+    x["b"]=22
+    return x
+end
+z = f1()
+if z["a"] == 11
+    print("PASS 12")
+    passed = passed + 1
+end
+if z["b"] == 12
+    print("PASS 12")
+    passed = passed + 1
+end
+if passed == 12
+    print("ALL TESTS PASSED")
+end

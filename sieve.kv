@@ -1,0 +1,21 @@
+p[2]=2
+
+n = 3
+
+while len(p) < 10
+    divisible = 0
+    for i in p
+        if mod(n, i) == 0
+            divisible = 1
+        end
+    end
+
+    if divisible == 0
+        p[n]=n
+    end
+    n = n + 1
+end
+
+for i in p
+    print(i)
+end
